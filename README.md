@@ -52,19 +52,28 @@ The following is a multi-line/block comment:
 
 In Ruby, we use the built-in *print* and *puts* methods to output to the console. The *puts* method will append the output with a line feed; whereas, the *print* method does not conclude the output with a line feed.
 
+The *puts* method syntax is as follows:
+
 ```ruby
 puts "This string will output to the console and end with a line feed"
 puts "This string will output to the console on a new line"
 ```
 
+The *print* method syntax is as follows:
+
 ```ruby
-print "This string will output to the console"
+print "This string will output to the console."
 print " This string will begin where the previous statement ended."
 ```
 
-If we want to embed variables in output strings using the *puts* or *print* methods we do so as follows:
+The expected output of the two *print* methods above will be as follows:
+
+*This string will output to the console. This string will begin where the previous statement ended.*
+
+If we want to embed values assigned to variables in output strings using the *puts* or *print* methods we do so as follows:
 
 ```ruby
 my_var = 10
 puts "The value of my_var is #{my_var}."
+print "The value of my_var is #{my_var}."
 ```
