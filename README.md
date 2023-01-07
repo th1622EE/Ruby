@@ -55,8 +55,15 @@ In Ruby, we use the built-in *print* and *puts* methods to output to the console
 The *puts* method syntax is as follows:
 
 ```ruby
-puts "This string will output to the console and end with a line feed"
-puts "This string will output to the console on a new line"
+puts "This string will output to the console and end with a line feed."
+puts "This string will output to the console on a new line."
+```
+
+The expected output of the two *puts* methods above will be as follows:
+
+```text
+This string will output to the console and end with a line feed.
+This string will output to the console on a new line.
 ```
 
 The *print* method syntax is as follows:
