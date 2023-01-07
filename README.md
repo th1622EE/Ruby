@@ -28,3 +28,43 @@ bundle
 ```bash
 rspec --init
 ```
+
+## Ruby Fundamentals
+
+### Comments
+
+The following is a single line comment:
+
+```ruby
+# This is a single line comment
+```
+
+The following is a multi-line/block comment:
+
+```ruby
+=begin
+  In Ruby we use
+  two space for indention
+=end
+```
+
+## Standard Input and Output
+
+In Ruby, we use the built-in *print* and *puts* methods to output to the console. The *puts* method will append the output with a line feed; whereas, the *print* method does not conclude the output with a line feed.
+
+```ruby
+puts "This string will output to the console and end with a line feed"
+puts "This string will output to the console on a new line"
+```
+
+```ruby
+print "This string will output to the console"
+print " This string will begin where the previous statement ended."
+```
+
+If we want to embed variables in output strings using the *puts* or *print* methods we do so as follows:
+
+```ruby
+my_var = 10
+puts "The value of my_var is #{my_var}."
+```
