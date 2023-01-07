@@ -68,7 +68,9 @@ print " This string will begin where the previous statement ended."
 
 The expected output of the two *print* methods above will be as follows:
 
-*This string will output to the console. This string will begin where the previous statement ended.*
+```text
+This string will output to the console. This string will begin where the previous statement ended.
+```
 
 If we want to embed values assigned to variables in output strings using the *puts* or *print* methods we do so as follows:
 
