@@ -23,7 +23,7 @@ gem 'rspec', '~> 3.12'
 bundle
 ```
 
-4. Initialize RSpec for your project using the following command in the bash terminal:
+4. Initialize RSpec for your project using the following command in bash terminal:
 
 ```bash
 rspec --init
