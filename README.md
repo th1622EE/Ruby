@@ -31,14 +31,14 @@ rspec --init
 
 ## Ruby Fundamentals
 
-### Data Types
+### Variable Data Types
 
 Ruby is a purely object oriented language, so everything in Ruby is an object. Though everything is an object, Ruby has various data types used to reference an objects attributes, and each of these data types are simply objects of a class. The following are the data types associated with the Ruby language:
 
 | Data Type | Class |
 | :---: | :---: |
 | Numbers | [Numeric](https://ruby-doc.org/3.1.3/Numeric.html) |
-| Booleans | [True](https://ruby-doc.org/3.1.3/TrueClass.html), [False](https://ruby-doc.org/3.1.3/FalseClass.html), [Nill](https://ruby-doc.org/3.1.3/NilClass.html) |
+| Booleans | [TrueClass](https://ruby-doc.org/3.1.3/TrueClass.html), [FalseClass](https://ruby-doc.org/3.1.3/FalseClass.html), [NilClass](https://ruby-doc.org/3.1.3/NilClass.html) |
 | Strings | [String](https://ruby-doc.org/3.1.3/String.html) |
 | Hashes | [Hash](https://ruby-doc.org/3.1.3/Hash.html) |
 | Arrays | [Array](https://ruby-doc.org/3.1.3/Array.html) |
@@ -82,9 +82,25 @@ The [Rational](https://ruby-doc.org/3.1.3/Rational.html) class is used to repres
 my_fraction = Rational(2,3) # => 2/3 as a Rational number
 ```
 
+#### Booleans
+
+Boolean values in Ruby are similar to that of other languages (i.e., Java, C++) in that they are used to represent true, false, or non-existent values via the [TrueClass](https://ruby-doc.org/3.1.3/TrueClass.html), [FalseClass](https://ruby-doc.org/3.1.3/FalseClass.html), and [NilClass](https://ruby-doc.org/3.1.3/NilClass.html) classes.
+
+##### True Class
+
+The [TrueClass](https://ruby-doc.org/3.1.3/TrueClass.html) class is used to represent a logically true value.
+
+##### False Class
+
+The [FalseClass](https://ruby-doc.org/3.1.3/FalseClass.html) class is used to represent a logically false value.
+
+##### Nill Class
+
+The [NilClass](https://ruby-doc.org/3.1.3/NilClass.html) class is used to represent an empty/non-existent value.
+
 #### Strings
 
-Strings can represent a variable which is itself an object of the String class initialized as either a String class object using a constructor, or as a literal string object.
+Strings are objects of the [String](https://ruby-doc.org/3.1.3/String.html) class used to represent an object having a variable sequence of bytes, typically used to represent text or binary data. Strings can be created using an object constructor, or as literal string values as follows:
 
 The following is an example of a String class object:
 
@@ -97,6 +113,60 @@ The following is an example of a String class literal object:
 ```ruby
 my_string = "This is a literal and immutable string"
 ```
+
+#### Hashes (aka Hash Maps)
+
+Hash Maps are objects of the [Hash](https://ruby-doc.org/3.1.3/Hash.html) class used to represent key-value pairs. The keys of a Hash Map must be unique, but the values assigned to the key can be redundant. Hash Map objects can be instantiated using an object constructor, or as a literal Hash Map.
+
+The following is an example of how to instantiate a Hash Map object using the constructor:
+
+```ruby
+my_hash1 = Hash.new
+```
+
+The following is are examples of how to instantiate a Hash Map object as a literal:
+
+```ruby
+my_hash2 = {key1: val, key2: val, key3: val}
+```
+
+```ruby
+my_hash3 = {"key1" => val, "key2" => val, "key3" => val}
+```
+
+#### Arrays
+
+Arrays are objects of the [Array](https://ruby-doc.org/3.1.3/Array.html) class used to represent ordered, integer-indexed collections of objects (elements) contiguously stored in memory. Arrays in Ruby are simliar to lists in Python in that they can store values having different data types. Arrays can be instantiated using a constructor, or as a literal.
+
+The following is an example of Array instantiation using the constructor:
+
+```ruby
+my_arr1 = Array.new
+```
+
+The following is an example of Array instantiation as a literal:
+
+```ruby
+my_arr2 = [1, 2.0, "three"]
+```
+
+#### Symbols
+
+Symbols are objects of the [Symbol](https://ruby-doc.org/3.1.3/Symbol.html) class used to represent a static object throughout the scope of the programs execution. Symbols are similar to Static variables in Java, in that only once instance of the object with the defined Symbol name will exist throughout the scope of the programs execution. Symbols are often used as keys in Hashes due to the required unique key identifier in Hash maps.
+
+Symbols are instantiated with a colon (:) preceding the identifier. The following is an example of using Symbols as keys in a Ruby Hash Map:
+
+```ruby
+my_symbols = {:key1 => val, :key2 => val, :key3 => val}
+```
+
+### Variable Scope Indicators
+
+| Scope | Indicator |
+| :---: | :---: |
+| Global | $variable_name |
+| Instance | @variable_name |
+| Class | @@variable_name |
 
 ### Comments
 
