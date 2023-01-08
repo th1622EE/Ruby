@@ -84,7 +84,7 @@ my_fraction = Rational(2,3) # => 2/3 as a Rational number
 
 #### Booleans
 
-Boolean values in Ruby are similar to that of other languages (i.e., Java, C++) in that they are used to represent true, false, or non-existent values via the [TrueClass](https://ruby-doc.org/3.1.3/TrueClass.html), [FalseClass](https://ruby-doc.org/3.1.3/FalseClass.html), and [NilClass](https://ruby-doc.org/3.1.3/NilClass.html) classes.
+Boolean values in Ruby are similar to that of other languages (i.e., Java, C++) in that they are used to represent true, false, or non-existent values via the [TrueClass](https://ruby-doc.org/3.1.3/TrueClass.html), [FalseClass](https://ruby-doc.org/3.1.3/FalseClass.html) classes.
 
 ##### True Class
 
@@ -93,10 +93,6 @@ The [TrueClass](https://ruby-doc.org/3.1.3/TrueClass.html) class is used to repr
 ##### False Class
 
 The [FalseClass](https://ruby-doc.org/3.1.3/FalseClass.html) class is used to represent a logically false value.
-
-##### Nill Class
-
-The [NilClass](https://ruby-doc.org/3.1.3/NilClass.html) class is used to represent an empty/non-existent value.
 
 #### Strings
 
