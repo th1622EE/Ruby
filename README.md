@@ -31,6 +31,20 @@ rspec --init
 
 ## Ruby Fundamentals
 
+### Naming Conventions
+
+#### Variables
+
+Variables are defined with alpha-numeric combinations of characters with underscores separating the words (i.e., snake_case), but variables **cannot** beging with a number.
+
+#### Methods
+
+Methods use the same naming convetion as variables, but methods can end with an exclamation mark (!) to indicate a permanent change to the value affected; a question mark (?) to indicate the method returns a boolean value; an equals sign (=) to indicate the values are assigned to the variable affected, the return value is ignored, and the method returns the method arguments.
+
+#### Classes and Modules
+
+Classes and modules are defined using Pascal-case, such that the first character is capitalized, and the first character of each subsequent word is capitalized without an underscore.
+
 ### Variable Data Types
 
 Ruby is a purely object oriented language, so everything in Ruby is an object. Though everything is an object, Ruby has various data types used to reference an objects attributes, and each of these data types are simply objects of a class. The following are the data types associated with the Ruby language:
