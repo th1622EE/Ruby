@@ -31,6 +31,73 @@ rspec --init
 
 ## Ruby Fundamentals
 
+### Data Types
+
+Ruby is a purely object oriented language, so everything in Ruby is an object. Though everything is an object, Ruby has various data types used to reference an objects attributes, and each of these data types are simply objects of a class. The following are the data types associated with the Ruby language:
+
+| Data Type | Class |
+| :---: | :---: |
+| Numbers | [Numeric](https://ruby-doc.org/3.1.3/Numeric.html) |
+| Booleans | [True](https://ruby-doc.org/3.1.3/TrueClass.html), [False](https://ruby-doc.org/3.1.3/FalseClass.html), [Nill](https://ruby-doc.org/3.1.3/NilClass.html) |
+| Strings | [String](https://ruby-doc.org/3.1.3/String.html) |
+| Hashes | [Hash](https://ruby-doc.org/3.1.3/Hash.html) |
+| Arrays | [Array](https://ruby-doc.org/3.1.3/Array.html) |
+| Symbols | [Symbol](https://ruby-doc.org/3.1.3/Symbol.html) |
+
+#### Numbers
+
+The [Numeric](https://ruby-doc.org/3.1.3/Numeric.html) class is used to represent numerical values. The subclasses of the [Numeric](https://ruby-doc.org/3.1.3/Numeric.html) class are the [Integer](https://ruby-doc.org/3.1.3/Integer.html), [Float](https://ruby-doc.org/3.1.3/Float.html), [Complex](https://ruby-doc.org/3.1.3/Complex.html), and [Rational](https://ruby-doc.org/3.1.3/Rational.html) classes.
+
+##### Integer Class
+
+The [Integer](https://ruby-doc.org/3.1.3/Integer.html) class is used to represent whole integer values.
+
+```ruby
+my_int = 1
+```
+
+##### Float Class
+
+The [Float](https://ruby-doc.org/3.1.3/Float.html) class is used to represent decimal values having a default of double-precision based on the [IEEE 754 Standard](https://en.wikipedia.org/wiki/IEEE_754).
+
+```ruby
+my_float = 2.5
+```
+
+##### Complex Class
+
+The [Complex](https://ruby-doc.org/3.1.3/Complex.html) class is used to represent a Real and Imaginary pair of integer and/or floating point values.
+
+```ruby
+my_complex1 = Complex(1)      # => 1+0i
+my_complex2 = Complex(1,2)    # => 1+2i
+my_complex3 = Complex(0.5,-5) # => 0.5-5i
+```
+
+##### Rational Class
+
+The [Rational](https://ruby-doc.org/3.1.3/Rational.html) class is used to represent a pair of **integer** values as a fraction.
+
+```ruby
+my_fraction = Rational(2,3) # => 2/3 as a Rational number
+```
+
+#### Strings
+
+Strings can represent a variable which is itself an object of the String class initialized as either a String class object using a constructor, or as a literal string object.
+
+The following is an example of a String class object:
+
+```ruby
+my_string = String.new
+```
+
+The following is an example of a String class literal object:
+
+```ruby
+my_string = "This is a literal and immutable string"
+```
+
 ### Comments
 
 The following is a single line comment:
