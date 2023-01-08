@@ -167,6 +167,7 @@ my_symbols = {:key1 => val, :key2 => val, :key3 => val}
 | Global | $variable_name |
 | Instance | @variable_name |
 | Class | @@variable_name |
+| Local | variable_name |
 
 ### Comments
 
